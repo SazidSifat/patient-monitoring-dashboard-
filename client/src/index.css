@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #0f172a;
+    --color-secondary: #1e293b;
+    --color-accent: #38bdf8;
+  }
+
+  body {
+    @apply bg-slate-900 text-white font-sans antialiased;
+    background-color: var(--color-primary);
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-xl p-6 shadow-lg backdrop-blur-sm;
+    background-color: var(--color-secondary);
+    border: 1px solid rgb(51, 65, 85);
+    background-color: color-mix(in srgb, var(--color-secondary) 80%, transparent);
+  }
+
+  .chart-container {
+    @apply w-full h-64;
+  }
+}
