@@ -4,6 +4,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const socketService = require('./services/socketService');
 const sensorService = require('./services/sensorService');
+const mqttService = require('./services/mqttService');
 const { validateSensorData, errorHandler } = require('./middleware/errorMiddleware');
 
 const app = express();
@@ -15,6 +16,7 @@ app.use(bodyParser.json());
 // Initialize services
 socketService.init(server);
 sensorService.init();
+mqttService.init();
 
 // API Endpoint for ESP32 to send data
 app.post('/api/sensors', validateSensorData, (req, res, next) => {
