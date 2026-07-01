@@ -1,0 +1,19 @@
+{
+  "name": "patient-monitoring-dashboard",
+  "private": true,
+  "version": "1.0.0",
+  "packageManager": "pnpm@11.5.0",
+  "description": "Patient Monitoring Dashboard Monorepo",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.4"
+  }
+}
