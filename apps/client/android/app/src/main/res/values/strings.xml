@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Patient Monitor</string>
+    <string name="title_activity_main">Patient Monitor</string>
+    <string name="package_name">com.sasthotech.patient</string>
+    <string name="custom_url_scheme">com.sasthotech.patient</string>
+</resources>
